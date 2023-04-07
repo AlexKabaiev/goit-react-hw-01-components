@@ -1,0 +1,35 @@
+.item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 0 gray;
+    padding: 3px 10px;
+}
+
+.avatar {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.name {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.marker {
+    margin-right: 10px;
+    display: block;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+}
+
+.on {
+    background-color: rgb(83, 214, 83);
+}
+
+.off {
+    background-color: rgb(215, 21, 21);
+}

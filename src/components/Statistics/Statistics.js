@@ -1,5 +1,5 @@
 import css from './Statistics.module.css';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 const generateRandomColor = () => {
   const r = Math.floor(Math.random() * 256);
@@ -33,8 +33,8 @@ const Statistics = ({ title, stats}) => {
 };
 
 Statistics.propTypes = {
-  label: propTypes.string.isRequired,
-  percentage: propTypes.number.isRequired,
+  label: PropTypes.string.isRequired,
+  percentage: PropTypes.number.isRequired,
 };
 
 export default Statistics;
