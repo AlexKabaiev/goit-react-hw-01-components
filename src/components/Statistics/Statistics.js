@@ -1,18 +1,11 @@
 import css from './Statistics.module.css';
 import propTypes from 'prop-types';
 
-const createColor = () => {
-  const color =
-    'rgba(' +
-    Math.round(Math.random() * 255) +
-    ',' +
-    Math.round(Math.random() * 255) +
-    ',' +
-    Math.round(Math.random() * 255) +
-    ',' +
-    0.5 +
-    ')';
-
+const generateRandomColor = () => {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+  const color = `rgb(${r}, ${g}, ${b})`;
   return color;
 };
 
@@ -27,7 +20,7 @@ const Statistics = ({ title, stats}) => {
               <li
                 className={css.item}
                 key={id}
-                style={{ backgroundColor: createColor() }}
+                style={{ backgroundColor: generateRandomColor() }}
               >
                 <span className={css.label}>{label}</span>
                 <span className={css.percentage}>{percentage}</span>
@@ -39,9 +32,9 @@ const Statistics = ({ title, stats}) => {
     );
 };
 
-export default Statistics;
-
 Statistics.propTypes = {
   label: propTypes.string.isRequired,
   percentage: propTypes.number.isRequired,
 };
+
+export default Statistics;
