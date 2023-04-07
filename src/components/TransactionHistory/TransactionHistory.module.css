@@ -1,0 +1,36 @@
+.history {
+    margin-top: 20px;
+    width: 600px;
+    box-shadow: 2px 2px 5px 1px rgb(150, 150, 150);
+}
+
+.header {
+    color: #fff;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.headerRow {
+    background-color: rgb(25, 226, 245);
+    height: 30px;
+}
+
+.headerCell {
+    padding: 10px;
+}
+
+.body {
+    background-color: #fff;
+    color: rgb(104, 103, 103);
+    font-size: 16px;
+    padding: 5px;
+}
+
+.bodyCell {
+    padding: 5px;
+    text-align: center;
+}
+
+.odd {
+    background-color: rgb(203, 200, 200);
+}
