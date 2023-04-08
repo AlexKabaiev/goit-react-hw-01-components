@@ -20,10 +20,10 @@ FriendListItem.propTypes = {
     PropTypes.shape({
       avatar: PropTypes.string,
       name: PropTypes.string,
-      isOnline: PropTypes.bool.isRequired,
-      id: PropTypes.number.isRequired,
+      isOnline: PropTypes.bool,
+      id: PropTypes.number,
     })
-  ),
+  ).isRequired,
 };
 
 export default FriendListItem;
